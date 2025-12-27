@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JECRC Incubation Center – Supporting startups with mentorship, funding, innovation labs, and entrepreneurship resources. Join us to build and grow your startup.">
+  <title>JECRC Incubation Center|Startup Support, Mentorship & Innovation Lab </title>
+  <link rel="canonical" href="https://www.jicfoundation.co.in/" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="JIC Logo" class="brand-logo">
+        <span class="brand-text">JECRC Incubation Centre</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-jecrc-jic.html">About Us</a></li>
+          <li><a href="https://jecrcincubation.com/wp-content/uploads/2024/02/JIC-Startup-Policy-2.pdf">Startup Policy</a></li>
+          <li><a href="events-jecrc-jic.html">Events</a></li>
+          <li><a href="coworkingarea-jic-jecrc.html">Coworking</a></li>
+          <li><a href="startup-jecrc-jic.html">Incubated Startup</a></li>
+          <li><a href="contact-jic-jecrc.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="section hero hero-slideshow" aria-labelledby="hero-title">
+      <!-- Background Slideshow -->
+      <div class="hero-slideshow-container">
+        <div class="hero-slide active" style="background-image: url('assets/hero1.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('assets/hero2.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('assets/speaker2.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('assets/speaker4.jpg')"></div>
+        <div class="hero-slide" style="background-image: url('assets/hero5.jpg')"></div>
+      </div>
+      
+      <!-- Dark overlay for better text readability -->
+      <div class="hero-overlay"></div>
+      
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <span class="hero-eyebrow">India's leading campus incubator</span>
+          <h1 id="hero-title">
+            Ignite your Startup Journey with
+            <span class="hero-highlight">JIC</span>
+          </h1>
+          <p class="subtitle">Mentorship, Funding Support, and a Collaborative Community to turn bold ideas into Scalable Ventures.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="apply-jecrc-jic.html">Join the Community</a>
+            <a class="btn btn-outline" href="#programs">Explore Programs</a>
+          </div>
+          <div class="hero-video-container">
+            <button class="play-btn" id="playButton" aria-label="Play video">
+              <i class="fas fa-play"></i>
+              <span class="play-btn-text">Watch Our Story</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Slideshow indicators -->
+       
+      </div>
+      
+    </section>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-content">
+      <span class="close-btn" id="closeButton">&times;</span>
+      <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; fullscreen"></iframe>
+    </div>
+  </div>
+<!-- Events Scrolling Section -->
+
+<!-- Leaders at JIC Section -->
+<section class="leaders-section">
+  <h2 class="leaders-title" style="color: #6AAD75;">Leaders @ JIC</h2>
+
+  <div class="leaders-carousel-container">
+    <button class="scroll-btn left" id="scrollLeft">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="leaders-carousel" id="leadersCarousel">
+      <img src="assets/leader 1.jpg" alt="Leader">
+      <img src="assets/leader2.jpg" alt="Leader">
+      <img src="assets/leader3.jpg" alt="Leader">
+      <img src="assets/leader4.jpg" alt="Leader">
+      <img src="assets/leader5.jpg" alt="Leader">
+      <img src="assets/leader6.jpg" alt="Leader">
+      <img src="assets/leader7.jpg" alt="Leader">
+    </div>
+
+    <button class="scroll-btn right" id="scrollRight">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+<!-- About JIC Section -->
+<section class="about-jic">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About JECRC Incubation Center (JIC)</h2>
+      <p>
+        JIC – JECRC Incubation Centre (Jecrc foundation) at Jaipur empowers student innovators and
+         early stage startups with mentorship, co-working space, and seed funding. Our dynamic ecosystem has
+         supported 80+ student-led startups and incubated 150+ ventures to date, providing resources to launch
+        ideas into viable businesses. We invite young founders to join JIC – apply now to access workshops,
+        incubator space, and investor networks. 
+
+      </p>
+      <a href="#" class="about-btn">Learn More</a>
+    </div>
+
+    <div class="about-image">
+      <img src="assets/about.jpg" alt="About JIC">
+    </div>
+  </div>
+</section>
+<!-- JIC in Numbers Section -->
+<section class="jic-numbers" id="numbers">
+  <h2 class="numbers-title">
+    JIC at a Glance
+  </h2>
+
+  <div class="numbers-container">
+    <div class="number-box">
+      <h3 class="counter" data-target="80">0</h3>
+      <p>Startups Incubated</p>
+    </div>
+    <div class="number-box">
+      <h3 class="counter" data-target="11.5">0</h3>
+      <p>Grants Disbursed (Cr.)</p>
+    </div>
+    <div class="number-box">
+      <h3 class="counter" data-target="200">0</h3>
+      <p>Industry Leader Network</p>
+    </div>
+    <div class="number-box">
+      <h3 class="counter" data-target="20">0</h3>
+      <p>Mentors Board</p>
+    </div>
+  </div>
+</section>
+<!-- The Magnate Section -->
+<section class="magnate-section">
+  <div class="magnate-container">
+    <div class="magnate-header">
+      <h2 class="magnate-title">
+        <span class="title-word title-1">THE</span>
+        <span class="title-word title-2">MAGNATE</span>
+      </h2>
+      <p class="magnate-subtitle">JIC's very own publication celebrating innovation and entrepreneurship</p>
+    </div>
+
+    <div class="magnate-grid">
+      <div class="magnate-card" data-edition="1">
+        <div class="card-glow"></div>
+        <div class="card-number">01</div>
+        <div class="card-image">
+          <img src="assets/magnte2.png" alt="The Magnate 0.1">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Magnate 0.1</h3>
+          <p class="card-tagline">Exploring startup stories and entrepreneurial journeys</p>
+          <a href="https://jecrcfoundation.com/jf-data/AQAR2023-24/Magnate/magnate-1.0.pdf" class="card-btn">Read Now →</a>
+        </div>
+      </div>
+
+      <div class="magnate-card" data-edition="2">
+        <div class="card-glow"></div>
+        <div class="card-number">02</div>
+        <div class="card-image">
+          <img src="assets/magnte3.png" alt="The Magnate 0.2">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Magnate 0.2</h3>
+          <p class="card-tagline">Innovation insights and founder success stories</p>
+          <a href="https://drive.google.com/file/d/1szINF1Kv4-MXBfoMyFvSws8Wg2pgb_3G/view" class="card-btn">Read Now →</a>
+        </div>
+      </div>
+
+      <div class="magnate-card" data-edition="3">
+        <div class="card-glow"></div>
+        <div class="card-number">03</div>
+        <div class="card-image">
+          <img src="assets/magnte4.png" alt="The Magnate 0.3">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Magnate 0.3</h3>
+          <p class="card-tagline">Scaling startups and building sustainable ventures</p>
+          <a href="https://jecrcfoundation.com/jf-data/AQAR2023-24/Magnate/MAGNATE-3.0.pdf" class="card-btn">Read Now →</a>
+        </div>
+      </div>
+
+      <div class="magnate-card" data-edition="4">
+        <div class="card-glow"></div>
+        <div class="card-number">04</div>
+        <div class="card-image">
+          <img src="assets/magnte5.png" alt="The Magnate 0.4">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Magnate 0.4</h3>
+          <p class="card-tagline">Tech trends and future of entrepreneurship</p>
+          <a href="https://jecrcfoundation.com/jf-data/AQAR2023-24/Magnate/Magnate-4.0.pdf" class="card-btn">Read Now →</a>
+        </div>
+      </div>
+
+      <div class="magnate-card" data-edition="5">
+        <div class="card-glow"></div>
+        <div class="card-number">05</div>
+        <div class="card-image">
+          <img src="assets/magnte1.png" alt="The Magnate 0.5">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Magnate 0.5</h3>
+          <p class="card-tagline">Celebrating milestones and breakthrough innovations</p>
+          <a href="https://jecrcfoundation.com/jf-data/AQAR2023-24/Magnate/Magnate-5.0.pdf" class="card-btn">Read Now →</a>
+        </div>
+      </div>
+       <div class="magnate-card" data-edition="6">
+        <div class="card-glow"></div>
+        <div class="card-number">06</div>
+        <div class="card-image">
+          <img src="assets/magnet6.png" alt="The Magnate 0.6">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Magnate 0.6</h3>
+          <p class="card-tagline">Tech trends and future of entrepreneurship</p>
+          <a href="https://drive.google.com/file/d/1rUZ_80Cfvp6Qr6tqObIRn0ApDjN0Thhh/view" class="card-btn">Read Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Background Elements -->
+  <div class="magnate-bg-shapes">
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+    <div class="bg-shape shape-4"></div>
+    <div class="creative-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="floating-elements">
+      <div class="float-circle"></div>
+      <div class="float-triangle"></div>
+      <div class="float-square"></div>
+    </div>
+  </div>
+</section>
+
+<section class="leaders-section">
+  <h2 class="leaders-title"  style="color: #E17149;">Meet the JIC Family</h2>
+
+  <div class="leaders-carousel-container">
+    <button class="scroll-btn left" id="scrollLeftFamily">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="leaders-carousel" id="familyCarousel">
+      <img src="assets/speaker1.jpg" alt="Leader">
+      <img src="assets/speaker2.jpg" alt="Leader">
+      <img src="assets/speaker8.jpg" alt="Leader">
+      <img src="assets/speaker4.jpg" alt="Leader">
+      <img src="assets/speaker5.JPG" alt="Leader">
+      <img src="assets/speaker6.JPG" alt="Leader">
+      <img src="assets/speaker7.jpg" alt="Leader">
+    </div>
+
+    <button class="scroll-btn right" id="scrollRightFamily">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+<!-- Our Programs Section -->
+<section class="programs-section" id="programs-section">
+  <div class="programs-header">
+    <span class="programs-badge">
+      <i class="fa-solid fa-asterisk"></i>
+      Program Tracks
+    </span>
+    <h2 class="programs-title">Our Programs</h2>
+    <p class="programs-subtext">
+      Whether you are preparing to put your idea into action or want to scale your early-stage startup,
+      we have tailored programs just for you. JIC provides mentorship, support, and funding opportunities
+      to empower student entrepreneurs to turn their ideas into impactful ventures.
+    </p>
+  </div>
+  
+  <div class="programs-grid">
+     <div class="program-card">
+      <i class="fa-solid fa-laptop-code program-icon"></i>
+      <h3>Induction 1.0</h3>
+      <p>
+        Induction 1.0 is an engaging learning module where students are introduced to the complete content creation journey—how to shoot videos, how to edit them, and how to use AI tools effectively. It equips students with practical skills, creativity, and digital confidence, enabling them to transform their ideas into professional-quality content.
+      </p>
+    </div>
+     <div class="program-card">
+      <i class="fa-solid fa-graduation-cap program-icon"></i>
+      <h3>Induction 2.0</h3>
+      <p>
+        Induction 2.0 focuses on building strong technical skills, offering students hands-on training in web development, Salesforce, application development, and other essential technologies. It helps learners understand real-world tech workflows and equips them with industry-relevant abilities. This module empowers students to transform ideas into functional digital solutions with confidence and competence.
+      </p>
+    </div>
+    <div class="program-card">
+      <i class="fa-solid fa-rocket program-icon"></i>
+      <h3>Accelerator Programs</h3>
+      <p>
+        Our Virtual Accelerator and 6-week accelerator programs help budding entrepreneurs (especially JECRC students) validate concepts.
+         This includes intensive mentor sessions, MVP development, and demo days. Selected teams even receive seed funding and pitch practice.
+      </p>
+    </div>
+
+    <div class="program-card">
+      <i class="fa-solid fa-laptop-code program-icon"></i>
+      <h3>Incubation Program</h3>
+      <p>
+        Incubation Program: Graduates of our accelerator enter a full-time incubation with co-working desks, labs, and industry networks.
+         We guide founders through business model refinement and investor readiness. The incubation program connects closely with our accelerator so founders can smoothly “level up” – from ideation to prototype to market (see Apply Now for eligibility).
+      </p>
+    </div>
+    <div class="program-card">
+      <i class="fa-solid fa-laptop-code program-icon"></i>
+      <h3>•	Pre-Incubation (Ideation & Bootcamps)</h3>
+      <p>
+        We run hackathons, ideation workshops, and our Khoj Startup Conclave to spark ideas. For example, the annual KHOJ Yatra brings 40+ startups, investor panels, and pitch contests to campus, promoting entrepreneurship in Tier‑2/3 regions.
+      </p>
+    </div>
+
+    <div class="program-card">
+      <i class="fa-solid fa-lightbulb program-icon"></i>
+      <h3>Mentorship & Workshops</h3>
+      <p>
+        Weekly sessions like Leader’s Talk series and mentor office hours connect innovators with entrepreneurs, corporates (AWS, Microsoft for Startups, IVCA partners, etc.), and government leaders.
+         Founders gain advice on fundraising, market strategy, and product design from experienced mentors.
+      </p>
+    </div>
+
+    
+
+    
+  </div>
+</section>
+
+<!-- JEC Entrepreneurship Section -->
+<section class="jec-entrepreneurship-section">
+  <div class="jec-container">
+    <!-- Animated Background Elements -->
+    <div class="jec-bg-animation">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="jec-content-wrapper">
+      <!-- Header Section -->
+      <div class="jec-header">
+        <div class="jec-badge">
+          <i class="fas fa-rocket"></i>
+          <span>Entrepreneurship Excellence</span>
+        </div>
+        <h2 class="jec-title">
+          <span class="title-line-1">JEC</span>
+          <span class="title-line-2">Entrepreneurship Challenge</span>
+        </h2>
+        <p class="jec-subtitle">Fostering Innovation • Building Tomorrow's Leaders • Transforming Ideas into Impact</p>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="jec-main-grid">
+        <!-- Left Side - What is JEC -->
+        <div class="jec-info-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>What is JEC?</h3>
+          </div>
+          <div class="card-content">
+            <p>
+              <strong>JECRC Entrepreneurship Challenge (JEC)</strong> is the dynamic entrepreneurship body of JECRC University, 
+              designed to ignite the entrepreneurial spirit among students and foster innovation-driven thinking.
+            </p>
+            <div class="jec-features">
+              <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <span>Marketing and branding battles for real experience</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-trophy"></i>
+                <span>AI-powered startup building and innovation challenges</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-handshake"></i>
+                <span>Industry mentorship from experts and leaders</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Networking with professionals and potential investors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Visual & Links -->
+        <div class="jec-visual-section">
+          <div class="jec-image-container">
+            <div class="image-wrapper">
+              <img src="assets/JEClogo.png" alt="JEC Entrepreneurship Challenge" class="jec-main-image">
+              <div class="image-overlay">
+                <div class="overlay-content">
+                  <i class="fas fa-play-circle"></i>
+                  <span>Discover JEC Journey</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stats Floating Cards -->
+            
+
+          <!-- Action Buttons -->
+          <div class="jec-actions">
+            <a href="https://jecrcentrepreneurchallenge.co.in/" target="_blank" class="jec-btn primary">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Visit JEC Website</span>
+              <div class="btn-glow"></div>
+            </a>
+            <a href="#programs" class="jec-btn secondary">
+              <i class="fas fa-rocket"></i>
+              <span>Join the Challenge</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <!-- Logo and Description -->
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="JIC Logo" class="footer-logo">
+        <h3 class="footer-brand-name">JECRC Incubation Centre</h3>
+        <p class="footer-description">Empowering student innovators and early-stage startups with mentorship, co-working space, and seed funding.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-jecrc-jic.html">About Us</a></li>
+          <li><a href="https://jecrcincubation.com/wp-content/uploads/2024/02/JIC-Startup-Policy-2.pdf">Startup Policy</a></li>
+          <li><a href="events-jecrc-jic.html">Events</a></li>
+          <li><a href="coworkingarea-jic-jecrc.html">Coworking</a></li>
+          <li><a href="startup-jecrc-jic.html">Incubated startup</a></li>
+          <li><a href="contact-jic-jecrc.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="footer-contact">
+        <h4 class="footer-heading">Contact Us</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>JECRC Foundation, Jaipur, Rajasthan, India</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jic@jecrc.ac.in">jic@jecrc.ac.in</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+91-9772079954">+91-9772079954</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="social-links">
+          <a href=" https://www.instagram.com/jic_foundation/" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/JICFoundation" target="_blank" rel="noopener noreferrer" class="social-link facebook" aria-label="Facebook">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href=" https://www.linkedin.com/company/jecrc-incubation-centre/" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 JECRC Incubation Centre. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the student-led startups incubated at JECRC Incubation Center. Discover innovative ideas, success stories, and ventures nurtured through JIC’s mentorship, resources, and startup support programs.">
+  <title>Incubated Startups at JIC | Student-Led Innovations Mentored at JECRC</title>
+  <link rel="canonical" href="https://www.jicfoundation.co.in/startup-jecrc-jic.html" />
+  <link rel="stylesheet" href="coworking.css">
+  <link rel="stylesheet" href="aboutstyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+ /* 🎉 EVENTS & INITIATIVES SECTION */
+/* 🚀 STARTUPS PAGE */
+.startups-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 120px 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.startups-section::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(40, 125, 179, 0.12), transparent 70%);
+  top: -120px;
+  left: -100px;
+  border-radius: 50%;
+}
+
+.startups-section::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(225, 113, 73, 0.12), transparent 70%);
+  bottom: -120px;
+  right: -80px;
+  border-radius: 50%;
+}
+
+/* Headings */
+.sub-heading {
+  font-size: 1.6rem;
+  color: #287DB3;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* 🌟 Featured Startups */
+.featured-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.startup-card.featured {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(40, 125, 179, 0.1);
+  overflow: hidden;
+  width: 350px;
+  transition: all 0.4s ease;
+}
+
+.startup-card.featured:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(40, 125, 179, 0.15);
+}
+
+.startup-card.featured img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.startup-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.startup-info h4 {
+  color: #287DB3;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.startup-info p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 🏆 Success Stories */
+.success-section {
+  background: linear-gradient(135deg, #287DB3, #6AAD75);
+  border-radius: 20px;
+  margin: 100px 0;
+  padding: 60px 50px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(40, 125, 179, 0.2);
+}
+
+.success-section h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.success-section p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #f5f5f5;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 🚀 Current Startups */
+.current-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.startup-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(40, 125, 179, 0.1);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.startup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(40, 125, 179, 0.15);
+}
+
+.startup-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.startup-card .startup-info {
+  padding: 18px;
+  text-align: center;
+}
+
+.startup-card .startup-info h4 {
+  color: #E17149;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.startup-card .startup-info p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .featured-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .success-section {
+    margin: 60px 0;
+    padding: 40px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .startups-section {
+    padding: 70px 5%;
+  }
+
+  .success-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .startup-card img {
+    height: 150px;
+  }
+
+  .startup-info h4 {
+    font-size: 1rem;
+  }
+}
+
+/* 🌟 FEATURED STARTUPS (LOGO AND NAME ONLY) */
+.featured-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.startup-logo-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(40, 125, 179, 0.1);
+  padding: 20px 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid #6AAD75;
+}
+
+.startup-logo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(40, 125, 179, 0.2);
+}
+
+/* Gradient border glow */
+.startup-logo-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(90deg, #287DB3, #6AAD75, #E17149);
+}
+
+.logo-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(40, 125, 179, 0.1);
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.startup-logo-card h4 {
+  font-size: 1rem;
+  color: #287DB3;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .featured-logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 700px;
+  }
+
+  .startup-logo-card {
+    padding: 18px 12px;
+  }
+
+  .logo-container {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 500px;
+  }
+
+  .startup-logo-card {
+    padding: 15px 8px;
+  }
+
+  .logo-container {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .startup-logo-card h4 {
+    font-size: 0.9rem;
+  }
+}
+
+
+</style>
+<body>
+  <!-- Header -->
+  <header id="header" class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="JIC Logo" class="brand-logo">
+        <span class="brand-text">JECRC Incubation Centre</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-jecrc-jic.html">About Us</a></li>
+          <li><a href="https://jecrcincubation.com/wp-content/uploads/2024/02/JIC-Startup-Policy-2.pdf">Startup Policy</a></li>
+          <li><a href="events-jecrc-jic.html">Events</a></li>
+          <li><a href="coworkingarea-jic-jecrc.html">Coworking</a></li>
+          <li><a href="startup-jecrc-jic.html">Incubated startup's</a></li>
+          <li><a href="contact-jic-jecrc.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="section hero theme-blue" aria-labelledby="hero-title">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <span class="hero-eyebrow">India’s leading campus incubator</span>
+          <h1 id="hero-title">
+            Every Startup Has a Story our Begin at JIC.
+          </h1>
+         
+        </div>
+        </div>
+      
+    </section>
+  <!-- 🌟 Startups Page -->
+<section class="startups-section">
+    <div class="container">
+      <h2 class="section-heading center">Our <span>Startups</span></h2>
+      <p class="section-subtext">
+        JIC’s growing startup portfolio spans technology, healthcare, education, and cleantech.  
+        In just five years, over <strong>80 ventures</strong> have been incubated — many now raising seed rounds, grants, and national recognition.
+      </p>
+  <div class="current-startups">
+        <h3 class="sub-heading">Current Incubated Startups</h3>
+        <p class="section-subtext">
+          Here are some of the ventures currently being incubated at JIC — each building impactful solutions in diverse domains.
+        </p>
+  
+        <div class="current-grid">
+          <div class="startup-card">
+            <img src="assets/startup2.png" alt="Startup 1">
+            <div class="startup-info">
+              <h4>Maakhana</h4>
+              <p>Bringing the taste of Maa’s kitchen, straight to your doorstep.</p>
+            </div>
+          </div>
+          <div class="startup-card">
+            <img src="assets/startup3.png" alt="Startup 2"style="margin-top:20px;">
+            <div class="startup-info">
+              <h4 style="color: #6AAD75;">Roomzy</h4>
+              <p>Find your perfect room — hassle-free and in minutes.</p>
+            </div>
+          </div>
+          <div class="startup-card">
+            <img src="assets/startup1.png" alt="Startup 3"style="margin-top:20px;">
+            <div class="startup-info">
+              <h4 style="color: #287DB3;">Tobotics</h4>
+              <p>Tobotics — simplifying robotics for young minds, one toy at a time.</p>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+       <!-- 🧭 Success Stories Section -->
+      <div class="success-section">
+        <div class="success-content">
+          <h3>Success Stories</h3>
+          <p>
+            Our ventures have collectively raised seed rounds, government grants, and industry awards.  
+            In 2024, <strong>three JIC startups</strong> received <strong>₹1 Crore scale-up funding</strong> under MeitY’s TIDE 2.0 program.  
+            Featured in <strong>Business Standard</strong> as “Rajasthan’s launchpad for startups”, JIC continues to empower founders 
+            shaping the future of innovation.
+          </p>
+        </div>
+      </div>
+      <!-- 🌟 Featured Startups -->
+     <!-- 🌟 Featured Startups (Logo and Name Only) -->
+<div class="featured-startups">
+    <h3 class="sub-heading">Featured Startups</h3>
+    <p class="section-subtext center">
+      These startups from JIC's incubation program have attracted national attention, secured grants, and built innovative solutions across multiple domains.
+    </p>
+  
+    <div class="featured-logos-grid">
+      <!-- Startup 1 -->
+      <div class="startup-logo-card">
+        <div class="logo-container">
+          <img src="assets/1.png" alt="Heritage Creations Logo">
+        </div>
+        <h4>Heritage Creations</h4>
+      </div>
+  
+      <!-- Startup 2 -->
+      <div class="startup-logo-card">
+        <div class="logo-container">
+          <img src="assets/2.png" alt="DocTunes Logo">
+        </div>
+        <h4>DocTunes</h4>
+      </div>
+  
+      <!-- Startup 3 -->
+      <div class="startup-logo-card">
+        <div class="logo-container">
+          <img src="assets/3.png" alt="Urban Biotix Logo">
+        </div>
+        <h4>Urban Biotix</h4>
+      </div>
+
+      <!-- Startup 4 -->
+      <div class="startup-logo-card">
+        <div class="logo-container">
+          <img src="assets/4.png" alt="CarDho Logo">
+        </div>
+        <h4>CarDho</h4>
+      </div>
+
+      <!-- Startup 5 -->
+      <div class="startup-logo-card">
+        <div class="logo-container">
+          <img src="assets/5.png" alt="Sanjog Logo">
+        </div>
+        <h4>Sanjog</h4>
+      </div>
+
+      <!-- Startup 6 -->
+      <div class="startup-logo-card">
+        <div class="logo-container">
+          <img src="assets/6.png" alt="Uphaar Logo">
+        </div>
+        <h4>Uphaar</h4>
+      </div>
+    </div>
+  </div>
+  
+  
+   
+  
+      <!-- 🚀 Current Startups Section -->
+      
+  </section>
+  
+<!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <!-- Logo and Description -->
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="JIC Logo" class="footer-logo">
+        <h3 class="footer-brand-name">JECRC Incubation Centre</h3>
+        <p class="footer-description">Empowering student innovators and early stage startups with mentorship, co-working space, and seed funding.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-jecrc-jic.html">About Us</a></li>
+          <li><a href="https://jecrcincubation.com/wp-content/uploads/2024/02/JIC-Startup-Policy-2.pdf">Startup Policy</a></li>
+          <li><a href="events-jecrc-jic.html">Events</a></li>
+          <li><a href="coworkingarea-jic-jecrc.html">Coworking</a></li>
+          <li><a href="startup-jecrc-jic.html">Incubated startup's</a></li>
+          <li><a href="contact-jic-jecrc.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="footer-contact">
+        <h4 class="footer-heading">Contact Us</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>JECRC Foundation, Jaipur, Rajasthan, India</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jic@jecrc.ac.in">jic@jecrc.ac.in</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+91-9772079954">+91-9772079954</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="social-links">
+          <a href=" https://www.instagram.com/jic_foundation/" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/JICFoundation" target="_blank" rel="noopener noreferrer" class="social-link facebook" aria-label="Facebook">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href=" https://www.linkedin.com/company/jecrc-incubation-centre/" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 JECRC Incubation Centre. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
